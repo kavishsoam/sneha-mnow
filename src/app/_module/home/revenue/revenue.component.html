@@ -1,0 +1,40 @@
+<div fxLayout="row" fxLayout.xs="column" class="row">
+  <div fxFlex="30%" fxFlex.xs="100%" layout="column" class="mat-cloumn">
+    <h3>Revenue</h3>
+    <div class="display-flex">
+      <div class="chart-size" id="pieChartDiv1"></div>
+      <div class="width-155">
+        <div class="example-full-width">
+          <p class="copy_demo1">Services</p>
+          <p class="copy_demo">$60.56</p>
+          <p class="copy_demo1">Products</p>
+          <p class="copy_demo">$43.88</p>
+          <p class="copy_demo1">Voucher</p>
+          <p class="copy_demo">$8.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="first-border"></div>
+  <div fxFlex="35%" fxFlex.xs="100%" layout="column" class="mat-cloumn">
+    <h3>Products</h3>
+    <div class="display-flex left-border">
+      <div class="chart-size" id="pieChartDiv2"></div>
+      <div>
+        <p class="margin-0 color-black" *ngFor="let data of data; let i = index"> {{i+1}}.{{data.country}}</p>
+        <button class="show-more" mat-button>Show More</button>
+      </div>
+    </div>
+  </div>
+  <div class="last-border"></div>
+  <div fxFlex="35%" fxFlex.xs="100%" layout="column" class="mat-cloumn">
+    <h3>Services</h3>
+    <div class="display-flex">
+      <div class="chart-size" id="pieChartDiv3"></div>
+      <div>
+        <p class="margin-0 color-black" *ngFor="let data of data; let i = index"> {{i+1}}.{{data.country}}</p>
+        <button class="show-more" mat-button>Show More</button>
+      </div>
+    </div>
+  </div>
+</div>

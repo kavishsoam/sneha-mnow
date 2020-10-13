@@ -1,0 +1,83 @@
+<div fxLayout="row" fxLayout.xs="column">
+  <div fxFlex="70%" layout="column" class="mat-cloumn">
+    <app-sales></app-sales>
+  </div>
+  <div fxFlex="30%" layout="column" class="mat-cloumn">
+    <mat-card class="mat-border">
+      <div fxLayout="column" fxLayoutAlign="space-around none">
+        <div fxFlex="10">
+          <div class="card-heading">Marketing Source</div>
+        </div>
+        <div fxFlex="90">
+          <div fxLayout="row" fxLayoutAlign="space-around none">
+            <div fxFlex="60">
+              <div id="pieChartFirst1"></div>
+            </div>
+            <div fxFlex="40">
+              <p class="new_demo1">1. Book It App</p>
+              <p class="new_demo1">2. Walk In</p>
+              <p class="new_demo1">3. Drive In</p>
+              <p class="new_demo1">4. Facebook</p>
+              <p class="new_demo1">5. Instagram</p>
+              <p class="new_demo1">7. Google Maps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+    <br />
+    <mat-card class="mat-border">
+      <div fxLayout="column" fxLayoutAlign="space-around none">
+        <div fxFlex="10">
+          <div class="card-heading">Current Cash In Drawer</div>
+        </div>
+        <div fxFlex="90">
+          <div fxLayout="row" fxLayoutAlign="space-around none">
+            <div fxFlex="33">
+              <p class="copy_demo">${{drawerItalyValue}}</p>
+              <p class="copy_demo1">Kalgoorlie</p>
+            </div>
+            <div class="line"></div>
+            <div fxFlex="33">
+              <p class="copy_demo">${{drawerGermanyValue}}</p>
+              <p class="copy_demo1">Busselton</p>
+            </div>
+            <div class="line"></div>
+            <div fxFlex="33">
+              <p class="copy_demo">${{drawerUkValue}}</p>
+              <p class="copy_demo1">Mandurah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
+<br />
+<!-- Revenue component -->
+<div fxLayout="row" fxLayout.xs="column">
+  <div fxFlex="100%" layout="column" class="mat-cloumn">
+    <mat-card class="mat-border" fxFlex="100%;">
+      <app-revenue></app-revenue>
+    </mat-card>
+  </div>
+</div>
+<!-- cost component -->
+<br />
+<div fxLayout="row" fxLayout.xs="column">
+  <div fxFlex="100%" layout="column" class="mat-cloumn">
+    <app-cost-profit-customer></app-cost-profit-customer>
+  </div>
+</div>
+<!-- Average time and appointment component -->
+<div fxLayout="row" fxLayout.xs="column">
+  <div fxFlex="100%" layout="column" class="mat-cloumn">
+    <app-avg-time-appointment></app-avg-time-appointment>
+  </div>
+</div>
+<!--Business Rating Top Therapists Therapists Rating Component-->
+<div fxLayout="row" fxLayout.xs="column">
+  <div fxFlex="100%" layout="column" class="mat-cloumn">
+    <app-rating></app-rating>
+  </div>
+</div>

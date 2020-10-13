@@ -1,0 +1,70 @@
+.card-border-left {
+    border-right: 2px solid rgb(219, 219, 219);
+}
+
+.revenue-font {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.color-black {
+    color: rgb(77, 77, 77)
+}
+
+.display-flex {
+    display: flex;
+}
+
+.show-more {
+    margin-top: 30px;
+    width: 155px;
+    background: rgb(93, 143, 212);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.margin-0 {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.chart-size {
+    height: 250px;
+    width: 250px;
+}
+
+.margin-auto {
+    margin: auto 0;
+}
+
+.width-155 {
+    width: 155px;
+}
+
+.first-border {
+    border-left: 1px #DADADA solid;
+    height: 242px;
+    margin-top: 30px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.last-border {
+    border-left: 1px #DADADA solid;
+    height: 242px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.copy_demo {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #6794dc;
+    text-align: center;
+}
+
+.copy_demo1 {
+    text-align: center;
+}

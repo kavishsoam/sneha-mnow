@@ -1,0 +1,224 @@
+<div>
+  <div fxLayout="row" fxLayoutAlign="space-around none" style="width: 100%;">
+    <div fxFlex="30">
+      <div fxLayout="row" fxLayoutAlign="space-around none">
+        <div fxFlex="100">
+          <mat-card class="mat-border">
+            <div fxLayout="column" fxLayoutAlign="space-around none">
+              <div fxFlex="10">
+                <div class="card-heading">Cost</div>
+              </div>
+              <div fxFlex="90">
+                <div fxLayout="row" fxLayoutAlign="space-around none">
+                  <div fxFlex="100">
+                    <div class="chart-size" id="costPieChart"></div>
+                  </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-around none">
+                  <div fxFlex="100">
+                    <p>Salary $14,989.00</p>
+                    <p>Consumables $14,989.00</p>
+                    <p>Cost of goods $14,989.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+      <br />
+      <div fxLayout="row" fxLayoutAlign="space-around none">
+        <div fxFlex="100">
+          <mat-card class="mat-border">
+            <div fxLayout="column" fxLayoutAlign="space-around none">
+              <div fxFlex="10">
+                <div class="card-heading">Profit</div>
+              </div>
+              <div fxFlex="90">
+                <div fxLayout="row" fxLayoutAlign="space-around none">
+                  <div fxFlex="100">
+                    <div class="chart-size" id="profitPieChart"></div>
+                  </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-around none">
+                  <div fxFlex="100">
+                    <p class="profit-label">$14,989.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="30">
+      <div fxLayout="row" fxLayoutAlign="space-around none">
+        <div fxFlex="100">
+          <div fxLayout="column" fxLayoutAlign="space-around none">
+            <div fxFlex="50" class="border-out">
+              <mat-card class="mat-border">
+                <div fxLayout="column" fxLayoutAlign="space-around none">
+                  <div fxFlex="15">
+                    <div class="card-heading">Customer Gender</div>
+                  </div>
+                  <div fxFlex="10">
+                    <span>As of Month selected</span>
+                  </div>
+                  <div fxFlex="75">
+                    <div class="male-percentage">53% Male</div>
+                    <div class="female-percentage">47% Female</div>
+                    <app-progress-bar [progressData]="gender"></app-progress-bar>
+                    <div class="male-percentage">278</div>
+                    <div class="female-percentage">246</div>
+                    <div class="male-left-label">Male</div>
+                    <div class="female-right-label">Female</div>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+        <!-- <div fxFlex="50">
+                  <div fxLayout="column" fxLayoutAlign="space-around none"> -->
+        <!-- <div fxFlex="50" class="border-out">
+                          <mat-card>
+                              <div fxLayout="column" fxLayoutAlign="space-around none">
+                                  <div fxFlex="15">
+                                      <span>New v/s Return</span>
+                                  </div>
+                                  <div fxFlex="10">
+                                      <span>As of Month selected</span>
+                                  </div>
+                                  <div fxFlex="75">
+                                      <app-progress-bar [progressData]="customer"></app-progress-bar>
+                                  </div>
+                              </div>
+                          </mat-card>
+                      </div> -->
+        <!-- <div fxFlex="50" class="border-out">
+                          <mat-card>
+                              <div fxLayout="column" fxLayoutAlign="space-around none">
+                                  <div fxFlex="10">
+                                      <span>Profits</span>
+                                  </div>
+                                  <div fxFlex="90">
+                                      <div id="plotProfits"></div>
+                                  </div>
+                              </div>
+                          </mat-card>
+                      </div> -->
+        <!-- </div>
+              </div> -->
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-around none">
+        <div fxFlex="100">
+          <div fxLayout="column" fxLayoutAlign="space-around none">
+            <div fxFlex="50" class="border-out">
+              <mat-card class="mat-border">
+                <div fxLayout="column" fxLayoutAlign="space-around none">
+                  <div fxFlex="15">
+                    <div class="card-heading">New v/s Return</div>
+                  </div>
+                  <div fxFlex="10">
+                    <span>As of Month selected</span>
+                  </div>
+                  <div fxFlex="75">
+                    <div class="male-percentage">77% Old</div>
+                    <div class="female-percentage">33% New</div>
+                    <app-progress-bar [progressData]="customer"></app-progress-bar>
+                    <div class="male-percentage">459</div>
+                    <div class="female-percentage">269</div>
+                    <div class="male-left-label">Returned</div>
+                    <div class="female-right-label">New</div>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+            <div fxFlex="50" class="border-out">
+              <mat-card class="mat-border">
+                <div fxLayout="column" fxLayoutAlign="space-around none">
+                  <div fxFlex="10">
+                    <div class="card-heading">Payment Methods</div>
+                  </div>
+                  <div fxFlex="90">
+                    <div class="chart-size" id="pieChartPaymentMethod"></div>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div fxLayout="row" fxLayoutAlign="space-around none">
+          <div fxFlex="100">
+            <mat-card class="mat-border">
+              <div fxLayout="column" fxLayoutAlign="space-around none">
+                <div fxFlex="10">
+                  <div class="card-heading">Cost</div>
+                </div>
+                <div fxFlex="90">
+                  <div fxLayout="row" fxLayoutAlign="space-around none">
+                    <div fxFlex="100">
+                      <div id="costPieChart"></div>
+                    </div>
+                  </div>
+                  <div fxLayout="row" fxLayoutAlign="space-around none">
+                    <div fxFlex="100">
+                      <p>Salary $14,989.00</p>
+                      <p>Consumables $14,989.00</p>
+                      <p>Cost of goods $14,989.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </mat-card>
+          </div>
+    
+        </div> -->
+    </div>
+    <div fxFlex="40">
+      <div fxLayout="row" fxLayoutAlign="space-around none" class="border-out">
+        <mat-card class="mat-border">
+          <div class="mat-elevation-z0">
+            <div class="card-heading">Top Spender Customer</div>
+            <table mat-table [dataSource]="dataSource" style="width: 100%;">
+
+              <!-- Position Column -->
+              <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> No. </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+              </ng-container>
+
+              <!-- Weight Column -->
+              <ng-container matColumnDef="weight">
+                <th mat-header-cell *matHeaderCellDef> Weight </th>
+                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+              </ng-container>
+
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="symbol">
+                <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+            <mat-paginator [pageSizeOptions]="[6, 10, 20]" showFirstLastButtons></mat-paginator>
+          </div>
+          <div style="width: 100%;">
+            <button mat-raised-button type="button" color="primary" style="width: 100%;">Show More</button>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

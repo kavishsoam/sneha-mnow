@@ -1,0 +1,151 @@
+<div fxLayout="row" fxLayout.xs="column" class="row" fxLayoutAlign="space-around none">
+  <div fxFlex="35%" fxFlex.xs="100%" layout="column" class="mat-cloumn">
+    <mat-card class="mat-border">
+      <h3>Overall Business Rating</h3>
+      <br />
+      <p class="margin-0 color-blue">4.8</p>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <p class="reviews">28,000 reviews</p>
+      <mat-toolbar-row class="display-flex">
+        <h3>Service Reviews</h3>
+        <button mat-stroked-button class="btn-color">Sort</button>
+      </mat-toolbar-row>
+      <div *ngFor="let data of dataArr" class="margin-btm">
+        <mat-toolbar-row class="display-flex">
+          <div class="alpha-div">
+            <p class="alpha-font  margin-0">
+              {{data.alpha}}
+            </p>
+          </div>
+          <div>
+            <h3>{{data.name}}</h3>
+          </div>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+          <p class="no-margin">Best massage I've had, second visit and plan on coming back for more</p>
+        </mat-toolbar-row>
+      </div>
+      <!-- <mat-toolbar-row> -->
+      <div fxLayout="row" fxLayout.xs="column">
+        <button mat-stroked-button class="show-more">Show More</button>
+      </div>
+      <!-- </mat-toolbar-row> -->
+    </mat-card>
+  </div>
+  <div fxFlex="30%" fxFlex.xs="100%" layout="column" class="mat-cloumn">
+    <mat-card class="mat-border">
+      <h3>Top Therapist</h3>
+      <br />
+      <div fxLayout="row" fxLayout.xs="column">
+        <div fxFlex="10%" layout="column" class="mat-cloumn">
+
+          <mat-icon>account_circle</mat-icon>
+        </div>
+        <div fxFlex="70%" layout="column" class="mat-cloumn">
+          Eilyn
+          <br>
+          <span class="material-icons"> star_rate </span><span class="material-icons"> star_rate </span><span
+            class="material-icons"> star_rate </span><span class="material-icons"> star_rate </span>
+          <br>
+          <p style="font-size: 7pt;">278 reviews</p>
+        </div>
+        <div fxFlex="20%" layout="column" class="mat-cloumn">
+          <span class="material-icons"> military_tech </span>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayout.xs="column">
+        <div fxFlex="10%" layout="column" class="mat-cloumn">
+
+          <mat-icon>account_circle</mat-icon>
+        </div>
+        <div fxFlex="70%" layout="column" class="mat-cloumn">
+          James
+          <br>
+          <span class="material-icons"> star_rate </span><span class="material-icons"> star_rate </span>
+          <br>
+          <p style="font-size: 7pt;">278 reviews</p>
+        </div>
+        <div fxFlex="20%" layout="column" class="mat-cloumn">
+          <span class="material-icons"> military_tech </span>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayout.xs="column">
+        <div fxFlex="10%" layout="column" class="mat-cloumn">
+          <mat-icon>account_circle</mat-icon>
+        </div>
+        <div fxFlex="70%" layout="column" class="mat-cloumn">
+          James
+          <br>
+          <span class="material-icons"> star_rate </span><span class="material-icons"> star_rate </span>
+          <br>
+          <p style="font-size: 7pt;">278 reviews</p>
+        </div>
+        <div fxFlex="20%" layout="column" class="mat-cloumn">
+          <span class="material-icons"> military_tech </span>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayout.xs="column" style="padding: 0 0 0 35%;color:white;">
+        <button mat-stroked-button style="background-color:cornflowerblue">Show More</button>
+      </div>
+
+    </mat-card>
+  </div>
+  <div fxFlex="35%" fxFlex.xs="100%" layout="column" class="mat-cloumn">
+    <mat-card class="mat-border">
+      <h3>Therapists Rating</h3>
+      <br />
+      <p class="margin-0 color-blue">4.8</p>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <mat-icon class="color-blue"> star_rate </mat-icon>
+      <p class="reviews">28,000 reviews</p>
+      <mat-toolbar-row class="display-flex">
+        <h3>Service Reviews</h3>
+        <button mat-stroked-button class="btn-color">Sort</button>
+      </mat-toolbar-row>
+      <div *ngFor="let data of dataArr" class="margin-btm">
+        <mat-toolbar-row class="display-flex">
+          <div class="alpha-div">
+            <p class="alpha-font  margin-0">
+              {{data.alpha}}
+            </p>
+          </div>
+          <div>
+            <h3>{{data.name}}</h3>
+          </div>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+          <mat-icon class="color-blue"> star_rate </mat-icon>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+          <p class="no-margin">Best massage I've had, second visit and plan on coming back for more</p>
+        </mat-toolbar-row>
+      </div>
+      <mat-toolbar-row>
+        <div fxLayout="row" fxLayout.xs="column">
+          <button mat-stroked-button class="show-more">Show More</button>
+        </div>
+      </mat-toolbar-row>
+    </mat-card>
+  </div>
+</div>
